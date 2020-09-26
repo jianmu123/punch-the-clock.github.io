@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDayList</title>
+    <link rel="stylesheet" href="sty.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="today.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <header>
+      <section>
+        <label for="title">今日目标</label>
+        <input
+          type="text"
+          name=""
+          id="title"
+          placeholder="添加目标"
+          required="required"
+        />
+        <button class="btn-success">确认</button>
+      </section>
+      <!-- 正在进行模块 -->
+      <div id="star">
+        <h2>正在进行的 <span id="todocount"></span></h2>
+        <ol id="todolist" class="demo-box"></ol>
+      </div>
+
+      <div id="over">
+        <!-- 已经完成模块 -->
+        <h2>已经完成的<span id="donecount"></span></h2>
+        <ul id="donelist"></ul>
+      </div>
+    </header>
+  </body>
+</html>
